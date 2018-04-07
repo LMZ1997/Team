@@ -413,20 +413,74 @@
 	float: left;
 	font-weight: lighter;
 }
+.shangou .shangou_art{
+	position: relative;
+}
+.shangou #shangouleft{
+	position: absolute;
+	right: 50px;
+	top: -35px;
+	opacity: 0;
+	cursor: pointer;
+}
+.shangou span:nth-of-type(2){
+	position: absolute;
+	right: 40px;
+	top: -45px;
+	cursor: pointer;
+}
+.shangou #shangouright{
+	position: absolute;
+	right: 15px;
+	top: -35px;
+	opacity: 0;
+	cursor: pointer;
+}
+.shangou span:nth-of-type(1){
+	position: absolute;
+	right: 0px;
+	top: -45px;
+	cursor: pointer;
+}
+.shangou span:hover{
+	color: tomato;
+}
+.shangou #shangouleft:checked~span:nth-of-type(2){
+	/*color: rgba(0,0,0,0.2);*/
+	/*cursor: none;*/
+	border: 1px solid rgba(0,0,0,0.2);
+}
+.shangou #shangouright:checked~span:nth-of-type(1){
+	/*color: rgba(0,0,0,0.2);*/
+	/*cursor: none;*/
+	border: 1px solid rgba(0,0,0,0.2);
+}
 .shangou span{
-	float: right;
+	/*float: right;*/
 	width: 40px;
 	height: 30px;
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
 	border: 1px solid rgba(0,0,0,0.2);
+	/*border: 1px solid #000;*/
+	color: black;
+	cursor: pointer;
 	/*margin-top:5px; */
 }
+.shangou #shangouright:checked~.shangou_lunbo ul{
+	/*position: 
+	left: -500px;*/
+	transform: translateX(-500px);
+}
+.shangou #shangouleft:checked~.shangou_lunbo ul{
+/*	left: 500px;*/
+	transform: translateX(0px);
+}
 .shangou .shangou_art{
-	width: 100%;
+	width: 1300px;
 	height: 400px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .shangou .shangou_art div{
 	float: left;
@@ -435,12 +489,21 @@
 	background-color: rgba(0,0,0,0.05);
 	/*margin-right: 15px;*/
 }
-.shangou .shangou_art ul{
+.shangou .shangou_art .shangou_lunbo{
 	width: 1000px;
 	height: 100%;
-	list-style: none;
 	overflow: hidden;
 	float: right;
+	background-color: white;
+	/*border: 1px solid #000;*/
+}
+.shangou .shangou_art ul{
+	width: 1500px;
+	height: 100%;
+	list-style: none;
+	float:left;
+	transition-property:transform;
+	transition-duration: 0.5s;
 }
 .shangou .shangou_art ul li{
 	float: left;
@@ -466,12 +529,46 @@
 	margin-bottom: 35px;
 }
 .shangou .shangou_art ul li:nth-child(4) img{
-	width:100px;
+	width:70px;
 	height: 200px;
 	/*margin:60px 65px;*/
 	margin-top: 60px;
-	margin-left: 65px;
+	margin-left: 75px;
 	margin-bottom: 15px;
+}
+.shangou .shangou_art ul li:nth-child(5) img{
+	width: 200px;
+	height: 150px;
+	/*margin:90px 15px;*/
+	margin-top: 90px;
+	margin-left: 15px;
+	margin-bottom: 35px;
+}
+.shangou .shangou_art ul li:nth-child(6) img{
+	width: 200px;
+	height: 150px;
+	/*margin:90px 15px;*/
+	margin-top: 90px;
+	margin-left: 15px;
+	margin-bottom: 35px;
+}
+.shangou .shangou_art ul li:nth-of-type(1){
+	border-top: 1px solid orange;
+}
+.shangou .shangou_art ul li:nth-of-type(2){
+	border-top: 1px solid green;
+}
+.shangou .shangou_art ul li:nth-of-type(3){
+	border-top: 1px solid blue;
+}
+.shangou .shangou_art ul li:nth-of-type(4){
+	border-top: 1px solid red;
+}
+.shangou .shangou_art ul li:nth-of-type(5){
+	border-top: 1px solid green;
+}
+.shangou .shangou_art ul li:nth-of-type(6){
+	border-top: 1px solid blue;
 }
 .shangou .shangou_art p{
 	/*margin-top: -10px;*/
