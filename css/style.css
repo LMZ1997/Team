@@ -26,6 +26,12 @@
 	font-size: 13px;
 	overflow: hidden;
 }
+.container a:hover{
+	color: white;
+}
+.container .header_right a:last-child:hover{
+	color: tomato;
+}
 .container div:first-child{
 	float: left;
 }
@@ -42,15 +48,23 @@
 .container  .header_right{
 	margin-left: 29%;
 }*/
+.container .header_right{
+	height: 40px;
+}
 .container .header_right a:last-child{
+	height: 40px;
 	width: 80px;
 	margin-left: 20px;
 	background-color: grey;
 	font-size: 15px;
+	float: right;
+	/*display: inline-block;*/
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
 .header_right a i{
-	margin-right:5px; 
+	margin-right:5px;
 }
 .content{
 	width: 1300px;
@@ -83,23 +97,59 @@
 	margin-right: 10px;
 	/*background-color: red;*/
 }
+.content .art_head a:hover{
+	color: tomato;
+}
 .content .art_head .search_all{
-	width: 300px;
-	height: 60px;
+	height: 80px;
+	line-height: 80px;
 	float: right;
-	border: 1px solid #000;
-	margin-bottom: 20px;
+	position: relative;
+	/*border: 1px solid #000;*/
 }
 .content .art_head .search_all input{
 	width: 250px;
+	height: 40px;
+	float: right;
+	margin-top: 20px;
+}
+.content .art_head .search_all .hongmi,.mix{
 	height: 30px;
-	/*display: inline-block;*/
+	line-height: 30px;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+		top: 27px;
+		left: 70px;
+	padding: 0 10px;
+	font-size: 12px;
+}
+.content .art_head .search_all .hongmi:hover,.mix:hover{
+	background-color: tomato;
+	cursor: pointer;
+}
+.content .art_head .search_all .mix{
+	left: 160px;
 }
 .content .art_head .search_all .search{
 	width: 60px;
-	height: 60px;
-	border: 1px solid #000;
+	height: 42px;
+	border: 1px solid #b0b0b0;
 	float: right;
+	/*display: inline-block;*/
+	border-left: none;
+	margin-top: 20px;
+	line-height: 42px;
+	position: relative;
+}
+.content .art_head .search_all .search i{
+	/*float:right;*/
+	position: absolute;
+	top: 13px;
+	left: 21px;
+	font-size: 20px;
+	color: #b0b0b0;
+	/*text-align: center;*/
+	/*margin: 0 auto ;*/
 }
 .art_art{
 	width: 1300px;
