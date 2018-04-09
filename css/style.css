@@ -252,7 +252,8 @@
 	line-height: 48px;
 	color: white;
 	list-style: none;
-	text-align: center;
+	margin-left: 65px;
+	/*text-align: center;*/
 	/*margin: 0 auto;*/
 }
 .art_art .art_art_top_left ul li:hover{
@@ -429,6 +430,8 @@
 	color: white;
 	text-align: center;
 	color: rgba(255,255,255,0.7);
+	transition-property: box-shadow;
+	transition-duration: 0.5s;
 }
 .art_art_bottom a i{
 	color: rgba(255,255,255,0.7);
@@ -446,6 +449,10 @@
 	float: right;
 	margin-left: 15px;
 	background-color: green;
+}
+.box2 a:hover,.box3 a:hover,.box4 a:hover{
+	cursor: pointer;
+	box-shadow: 0 0 20px rgba(0,0,0,0.3)
 }
 .art_art_bottom img{
 	width: 100%;
@@ -542,6 +549,47 @@
 	height: 100%;
 	background-color: rgba(0,0,0,0.05);
 	/*margin-right: 15px;*/
+	position: relative;
+}
+.shangou .shangou_art div p:first-child{
+	margin-top: 60px;
+	font-size: 20px;
+	text-align: center;
+	color: red;
+}
+.shangou .shangou_art div img{
+	width: 34px;
+	height: 53px;                                                                                                                                                                                  
+	margin-top: 20px;
+	text-align: center;
+	margin: 50px 0  30px 130px;
+}
+.shangou .shangou_art .timer{
+	width: 30px;
+	height: 30px;
+	/*display: inline;*/
+	float: left;
+	color: white;
+	font-size: 25px;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: 80px;
+}
+.shangou .shangou_art div p:nth-child(3){
+	margin-bottom:30px;
+}
+.shangou .shangou_art div p:nth-child(6){
+	margin-left: -5px;
+}
+.shangou .shangou_art div p:nth-child(8){
+	margin-left: -5px;
+}
+.shangou .shangou_art .dash{
+	width: 30px;
+	height: 30px;
+	float: left;
+	color: black;
+	margin-left: 5px;
+	font-size: 20px;
 }
 .shangou .shangou_art .shangou_lunbo{
 	width: 1000px;
@@ -564,7 +612,7 @@
 	width: 235px;
 	height: 400px;
 	margin-left: 15px;
-	background-color: rgba(0,0,0,0.02);
+	background-color: rgba(0,0,0,0.04);
 }
 .shangou .shangou_art ul li img{
 	width: 150px;
@@ -634,7 +682,7 @@
 }
 .shangou .shangou_art ul li a+p{
 	width: 200px;
-	font-size: 18px;
+	font-size: 16px;
 	color: black;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -642,9 +690,9 @@
 	margin-bottom: 10px;
 }
 .shangou .shangou_art ul li p:nth-child(4){
-	width: 50px;
+	width: 55px;
 	margin-top: 15px;
-	margin-left: 65px;
+	margin-left: 60px;
 	display: inline-block;
 	font-size: 16px;
 	color: red;
