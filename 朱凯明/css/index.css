@@ -1,0 +1,84 @@
+/* 2018.4.9 */
+/* top begin */
+.top{
+	width: 100%;
+	height: 46px;
+	background-color:#333333;
+}
+.top ul{
+	width: 220px;
+	height: 46px;
+	line-height: 46px;
+	/* background-color: black; */
+	float: right;
+}
+.top ul li{
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	margin-right: 10px;
+	float: right;
+}
+.top li span{
+	margin: 0 0.5em 0 1em;
+	color: #666666;
+}
+.top ul li a{
+	text-decoration: none;
+	text-align: center;
+	color: #e7e7e7;
+	font-size: 14px;
+}
+/* hot begin */
+.hot{
+	width: 100%;
+	height: 790px;
+	background-color: gold;
+}
+.hot .header{
+	width: 100%;
+	/* height: 72px; */
+	background-color: green;
+	margin: 0 auto;
+}
+.hot .header .logo{
+	height: 72px;
+	width: 135px;
+	float: left;
+	background-color: blue;
+}
+.hot .header .logo img{
+	
+}
+.header .sou{
+	width: 340px;
+	height: 72px;
+	background-color: pink;
+	float: right;
+}
+.header .sou .inputer{
+	height: 72px;
+	line-height: 72px;
+	border-bottom: 1px solid black;
+	float: left;
+}
+/* .header .sou .inputer .button{
+	width: 258px;
+	height: 100%;
+} */
+.header .sou .inputer input{
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
+.header .sou .inputer a{
+	text-decoration: none;
+	font-size: 22px;
+	color: 
+
+}
+/* main begin */
+.main{
+	width: 100%;
+	background-color: blue;
+}
