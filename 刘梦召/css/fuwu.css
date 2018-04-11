@@ -104,6 +104,7 @@ a{
 	border-top: 1px solid rgba(0,0,0,0.1);
 	opacity: 0;
 	transition: all 0.5s;
+	background-color: white;
 }
 
 .header .nav_second .xiaomishouji ul{
@@ -203,4 +204,67 @@ a{
 }
 .header .search span:nth-of-type(2){
 	margin-left: 85px;
+}
+.beijing{
+	margin-top: 20px;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.shouye{
+	margin-top: 20px;
+	width: 1230px;
+	height: 383px;
+	margin:0 auto;
+}
+.shouye .bangzhu{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: #b0b0b0;
+	font-size: 15px;
+}
+.shouye div{
+	width: 100%;
+	height:333px;
+	overflow: hidden;
+}
+.shouye div ul{
+	width: 3690px;
+	height: 100%;
+	list-style: none;
+	animation-name: sport;
+	animation-duration: 7s;
+	animation-delay: 3s;
+	/*animation-timing-function: linear;*/
+	animation-iteration-count: infinite;
+}
+@keyframes sport{
+	0%{
+		margin-left: 0px;
+	}
+	25%{
+		margin-left: -1230px;
+	}
+	50%{
+		margin-left: -1230px;
+	}
+	75%{
+		margin-left: -2460px;
+	}
+	/*99%{
+		margin-left: -2460px;
+	}*/
+	100%{
+		margin-left: -2460px;
+	}
+
+}
+.shouye div ul li{
+	width: 1230px;
+	height: 100%;
+	float: left;
+}
+.shouye div ul li img{
+	width: 1230px;
+	height: 100%;
 }
