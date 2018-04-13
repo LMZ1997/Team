@@ -230,7 +230,7 @@ a{
 	height:250px;
 	overflow: hidden;
 }
-.shouye div ul{
+.shouye  div ul{
 	width: 3690px;
 	height: 100%;
 	list-style: none;
@@ -261,12 +261,40 @@ a{
 	}
 
 }
-.shouye div ul li{
+.shouye  div  ul li{
 	width: 1230px;
 	height: 100%;
 	float: left;
 }
-.shouye div ul li img{
+.shouye   div ul li img{
 	width: 1230px;
 	height: 100%;
+}
+.zizhu {
+	/*margin-top: 20px;*/
+	width: 1230px;
+	height: 300px;
+	margin:20px auto; 
+}
+.zizhu ul{
+	width: 1230px;
+	height: 360px;
+}
+.zizhu ul li{
+	margin-top: 20px;
+	list-style: none;
+	width: 307.5px;
+	height: 180px;
+	float: left;
+	/*padding-left: 100px;*/
+	box-sizing: border-box;
+	/*background-color: red;*/
+	text-align: center;
+}
+.zizhu li img{
+	width:100px;
+	height: 80px; 
+}
+.zizhu li span{
+	display: block;
 }
