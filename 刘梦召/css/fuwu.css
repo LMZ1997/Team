@@ -274,14 +274,19 @@ a{
 	/*margin-top: 20px;*/
 	width: 1230px;
 	height: 300px;
-	margin:20px auto; 
+	margin:20px auto;
+	font-size: 12px; 
+}
+.zizhu>div{
+	font-size: 22px;
+	color: rgba(0,0,0,0.6);
 }
 .zizhu ul{
 	width: 1230px;
-	height: 360px;
+	height: 315px;
 }
 .zizhu ul li{
-	margin-top: 20px;
+	/*margin-top: 10px;*/
 	list-style: none;
 	width: 307.5px;
 	height: 180px;
