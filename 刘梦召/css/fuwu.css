@@ -273,7 +273,7 @@ a{
 .zizhu {
 	/*margin-top: 20px;*/
 	width: 1230px;
-	height: 300px;
+	/*height: 300px;*/
 	margin:20px auto;
 	font-size: 12px; 
 }
@@ -302,4 +302,60 @@ a{
 }
 .zizhu li span{
 	display: block;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+
+
+.end{
+	width: 1230px;
+	/*height: 500px;*/
+	margin:33px auto;
+	padding-bottom: 378px;
+	box-sizing: border-box;
+}
+.end>div{
+	font-size: 22px;
+	color: rgba(0,0,0,0.6);
+}
+.end dl{
+	float: left;
+	margin-top: 50px;
+	margin-left:  244px;
+}
+.end dl:nth-child(2){
+	margin-left: 64px;
+}
+.end dl dt{
+	font-size: 18px;
+	margin-bottom: 20px;
+} 
+.end dl  dd{
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: rgba(0,0,0,0.5);
+}
+.end dl  dd:hover{
+	color: #ff6700;
+	cursor: pointer;
+}
+.end img{
+	width: 20px;
+	height:16px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.kefu{
+	width: 1230px;
+	margin: 0 auto;
+}
+.kefu .kefu_head{
+	font-size: 25px;
+	color: #666a6e;
 }
