@@ -281,12 +281,12 @@ a{
 	font-size: 22px;
 	color: rgba(0,0,0,0.6);
 	/*margin: 62px 0px;*/
-	padding: 62px 0px;
+	padding: 38px 0px;
 	background-color: #f5f5f5;
 }
 .zizhu ul{
 	width: 1230px;
-	height: 315px;
+	height: 358px;
 	background-color: white;
 }
 .zizhu ul li{
@@ -299,6 +299,8 @@ a{
 	box-sizing: border-box;
 	/*background-color: red;*/
 	text-align: center;
+	padding-top: 29px;
+	box-sizing: border-box;
 }
 .zizhu li img{
 	width:100px;
@@ -309,8 +311,33 @@ a{
 	width: 120px;
 	height: 118px;
 }
+.li_border_two{
+	border-right: 1px solid rgba(0,0,0,0.05);
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.li_border_rgt{
+	border-right: 1px solid rgba(0,0,0,0.05);
+}
+.li_border_btm{
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.zizhu li:hover span{
+	color: #ff6700;
+	cursor: pointer;
+}
 .zizhu li span{
 	display: block;
+}
+.zizhu .chanpin{
+	height: 378px;
+}
+.zizhu .chanpin li{
+	position: relative;
+}
+.zizhu .chanpin li span{
+	position: absolute;
+	top: 154px;
+	left: 126px;
 }
 
 .clearfix:after{
@@ -334,7 +361,8 @@ a{
 	font-size: 22px;
 	color: rgba(0,0,0,0.6);
 	background-color: #f5f5f5;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
+	padding-top: 33px;
 }
 .end dl{
 	float: left;
