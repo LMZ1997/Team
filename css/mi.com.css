@@ -1241,7 +1241,7 @@ height: 300px;
 .body .movie li{
 	list-style: none;
 	display: inline-block;
-	width: 295px;
+	width: 292px;
 	height: 290px;
 	background-color: #fff;
 	margin-right: 1px;
@@ -1254,7 +1254,7 @@ height: 300px;
 }
 .body .movie li  a{
 	font-size: 15px;
-	padding: 85px;
+	padding: 80px;
 	color: #000;
 
 }
