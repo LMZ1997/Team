@@ -366,7 +366,7 @@ a{
 .kefu{
 	width: 1230px;
 	margin: 0 auto;
-	height: 800px;
+	height: 662px;
 }
 .kefu .kefu_head{
 	font-size: 25px;
@@ -551,10 +551,10 @@ a{
 	margin:0 auto;
 	margin-top: 50px;
 	list-style: none;
-	line-height: 80px;
 	/*background-color: green;*/
 	border-bottom: 1px solid #b0b0b0;
 	margin-bottom: 50px;
+	background-color: white;
 }
 .gongneng li{
 	float: left;
@@ -562,13 +562,21 @@ a{
 	height: 22px;
 	line-height:22px;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 28px;
 	/*background-color: red;*/
 	border-right: 1px solid #b0b0b0;
 	box-sizing: border-box;
 	font-size: 22px;
 	color: rgba(0,0,0,0.6);
 }
+.gongneng li i{
+	padding-right: 5px;
+	box-sizing: border-box;
+	/*font-weight: lighter;*/
+	color: rgba(0,0,0,0.4);
+
+}
+
 .gongneng li:last-child{
 	border-right: none;
 }
@@ -659,7 +667,7 @@ footer{
 .foot_left .description ul li{
 	float: left;
 	list-style: none;
-	font-size: 1px;
+	font-size: 14px;
 	color: rgba(0,0,0,0.6);
 
 }
@@ -690,6 +698,12 @@ footer{
 .back_color{
 	background-color: #fafafa;
 	width: 100%;
+}
+.back_white{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 29px;
 }
 
 
