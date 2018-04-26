@@ -1,6 +1,6 @@
 
 .top{
-	width: 1600px;
+	width: 100%;
 	height: 40px;
 	background: #333333;
 }
@@ -181,6 +181,9 @@
 	height: 65px;
 	/*background: pink;*/
 }
+.jianjie p{
+	border: 1px solid rgba(0,0,0,0.3);
+}
 .jianjie .jian-left{
 	width: 100px;
 	height: 65px;
@@ -253,52 +256,34 @@
 	position: relative;
 }
 .tupian .img-box li img{
-	width: 100%;
+	width: 1600px;
 	height: 742px;
 	position: absolute;
 	top:0;
 	left: 0;
 }
-.tupian .left{
+.tupian .left,.tupian .right{
+	display: inline-block;
 	width: 150px;
 	height: 150px;
-	background: #fff;
-	position: absolute;
-	top:373px;
-	left: 72px;
-	text-decoration: none;
+	line-height: 150px;
 	border-radius: 50%;
-}
-.tupian .left:hover{
-	background: #e0e0e0;
-	
-}
-.tupian .left .lt{
-	color: #b7bbc6;
-	font-size: 50px;
+	text-align: center;
+	font-size: 60px;
+	color: #c1c1c1;			
 	position: absolute;
-	top: 40px;
-	left: 55px;
+	top:300px;
+	cursor: pointer;
+	z-index: 999;
+}
+.tupian .left:hover,.tupian .right:hover{
+	background: rgba(0,0,0,0.3);
+}
+.tupian .left{
+	left:35px;
 }
 .tupian .right{
-	width: 150px;
-	height: 150px;
-	background: #fff;
-	position: absolute;
-	top:373px;
-	right: 72px;
-	text-decoration: none;
-	border-radius: 50%;
-}
-.tupian .right:hover{
-	background: #e0e0e0;
-}
-.tupian .right .gt{
-	color: #b7bbc6;
-	font-size: 50px;
-	position: absolute;
-	top: 40px;
-	right: 55px;
+	right:35px;
 }
 .tupian .btn-box{
 	width: 500px;
@@ -332,7 +317,7 @@
 	height: 1000px;
 }
 .special{
-	width: 100%;
+	width: 1600px;
 	height: 874px;
 	background:#f7f7f7;
 }
@@ -525,7 +510,7 @@
 	font-size: 12px;
 }
 .youxi {
-	width: 100%;
+	width:100%;
 	height: 1180px;
 	background: #2a2a2a;
 }
@@ -622,9 +607,9 @@
 }
 .yuyin .phone{
 	width: 100%;
-	/*height: 585px;*/
+	height: 675px;
 	/*background: blue;*/
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 }
 .yuyin .phone .left{
 	width: 460px;
@@ -841,48 +826,28 @@
 	width: 100%;
 	height: 100%;
 }
-.phone .left{
+.phone .lt,.phone .gt{
+	display: inline-block;
 	width: 150px;
 	height: 150px;
-	/*background: #fff;*/
-	/*position: absolute;
-	top:373px;
-	left: 72px;*/
-	text-decoration: none;
-	/*border-radius: 50%;*/
-	/*background:#e7e7e7;*/
-}
-/*.phone  .left:hover{
-	background: #e0e0e0;
-	
-}*/
-.phone  .left .lt{
-	color: #b7bbc6;
-	font-size: 50px;
+	line-height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 60px;
+	color: #c1c1c1;			
 	position: absolute;
-	top: 40px;
-	left: 55px;
+	top:300px;
+	cursor: pointer;
+	z-index: 999;
 }
-.phone  .right{
-	width: 150px;
-	height: 150px;
-	/*background: #fff;*/
-/*	position: absolute;
-	top:390px;
-	right: 72px;*/
-	text-decoration: none;
-	/*border-radius: 50%;*/
-	/*background:#e7e7e7;*/
+.phone .lt:hover,.phone .gt:hover{
+	background: rgba(0,0,0,0.3);
 }
-/*.phone  .right:hover{
-	background: #e0e0e0;
-}*/
-.phone  .right .gt{
-	color: #b7bbc6;
-	font-size: 50px;
-	position: absolute;
-	top: 40px;
-	right: 55px;
+.phone .lt{
+	left:35px;
+}
+.phone .gt{
+	right:35px;
 }
 .phone .btn-box{
 	width: 644px;
@@ -900,9 +865,7 @@
 	float: left;
 	margin-right: 10px;
 }
-/*.tupian .btn-box li:first-child{
-	background: #676767;
-}*/
+
 .phone .btn-box li:hover{
 	background: #676767;
 }
@@ -1001,11 +964,12 @@
 .yishupin a .zuhe .fuhao{
 	position: absolute;
 	top:0px;
-	right: 65px;
+	right: 50px;
 	font-size: 50px;
-	color: #567997;
+	color: #ccc;
 }
-.yishupin a:hover .zuhe{
+.yishupin a:hover .zuhe h2,
+.yishupin a:hover .zuhe .fuhao{
 	color: #ff6700;
 }
 .saoma{
@@ -1045,6 +1009,7 @@
 .footer{
 	/*height: 277px;*/
 	background:#fff;
+	width: 100%;
 }
 .footer .services{
 	width: 100%;
@@ -1138,6 +1103,7 @@
 	background: #ff6700;
 }
 .end{
+	width: 100%;
 	height: 148px;
 }
 .end .container-left{
@@ -1161,11 +1127,13 @@
 	float: left;
 	/*margin-left: 245px;*/
 }
-.end .container-left .content ul{
-	display: block;
-}
 .end .container-left .content li{
 	float: left;
+	margin-left: 15px;
+	/*margin-right: 12px;*/
+}
+.end .container-left .content li span{
+	margin-left: 15px;
 }
 .end .container-left .content li a{
 	color: #757575;
@@ -1179,6 +1147,11 @@
 	color: #b0b0b0;
 	font-size: 12px;
 	/*clear: both;*/
+}
+.end .container-left .content p a{
+	color: #757575;
+	font-size: 12px;
+	text-decoration: none;
 }
 .end .container-left .content p a:hover{
 	color: #ff6700;
