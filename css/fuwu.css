@@ -1,3 +1,45 @@
+ .cart_box .loader{
+			width: 4px;
+			height: 20px;
+			background-color: red;
+			margin:0 auto;
+			position: relative;
+			transform: scale(1,1);
+			animation: loading 0.3s linear 0s alternate-reverse infinite;
+			float: none;
+			margin-top: 40px;
+		}
+		.loader:after,.loader:before{
+			content: '';
+			width: 4px;
+			height: 20px;
+			background-color: red;
+			position: absolute;
+			top: 50%;
+			left:50%;
+			
+		}
+		.loader:after{
+			margin:-10px 0 0 -10px;
+			transform:scale(1,0.3);
+			animation: loading 0.3s linear 0.5s infinite alternate-reverse;
+		}
+		.loader:before{
+			margin:-10px 0 0 8px;
+			transform:scale(1,0.5);
+			animation: loading 0.3s linear 0.2s infinite alternate-reverse ;
+		}
+		@keyframes loading{
+			from{
+				opacity: 0.2;
+				transform: scale(1,0.5);
+			}
+			to{
+				opacity: 1;
+				transform: scale(1,1);
+			}
+		}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -15,6 +57,7 @@ a{
 	width: 1230px;
 	height: 40px;
 	margin: 0 auto;
+		position: relative;
 }
 .head_first .nav_first{
 	float: left;
@@ -36,6 +79,7 @@ a{
 .head_first li span{
 	opacity: 0.3;
 	margin:0px 5px;
+
 }
 .head_first .shopping-car{
 	color: #b0b0b0;
@@ -47,6 +91,20 @@ a{
 	background-color: #424242;
 	font-size: 12px;
 }
+.head_first  .cart_box{
+	width: 300px;
+	height: 0px;
+	background-color: white;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	z-index: 9999;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.head_first  .cart_box span{
+	display: none;
+}
 .head_first .shopping-car:hover{
 	color: #ff6700;
 	background-color: white;
@@ -57,6 +115,26 @@ a{
 }
 .head_first .user{
 	float: right;
+}
+.nav_content{
+	width: 100%;
+	height: 0px;
+	background-color: white;
+	position: absolute;
+	z-index: 10000;
+	top: 137px;
+	left: 0px;
+}
+.nav_content ul{
+	width: 1230px;
+	margin:0 auto;
+	height: 100%;
+}
+.nav_content ul li{
+	list-style: none;
+	float: left;
+	width: 200px;
+	height: 100%;
 }
 .header{
 	width: 1230px;
