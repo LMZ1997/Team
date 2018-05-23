@@ -124,6 +124,7 @@ a{
 	z-index: 10000;
 	top: 137px;
 	left: 0px;
+	overflow: hidden;
 }
 .nav_content ul{
 	width: 1230px;
@@ -135,6 +136,81 @@ a{
 	float: left;
 	width: 200px;
 	height: 100%;
+	position: relative;
+	text-align: center;
+
+}
+.nav_content ul li img{
+	width: 100px;
+	height: 100px;
+}
+.nav_content ul li .img_box{
+	margin-top: 30px;
+	width: 100%;
+	border-right: 1px solid #ccc;	
+}
+.nav_content .navTag{
+	color:#ff6700;
+	width: 50px;
+	height: 20px;
+	border: 1px solid red;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+.nav_content ul li .product_name{
+	width: 100px;
+	height:15px;
+	text-align: center;
+	line-height:15px;
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	bottom: 40px;
+	top: 160px;
+}
+.nav_content ul li .product_price{
+	width: 100px;
+	height:15px;
+	text-align: center;
+	line-height: 15px;
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	top: 180px;
+	margin-left: -50px;
+	/*bottom: 20px;*/
+	color: #ff6700;
+}
+.art_art_top_left{
+	background-color: white;
+	position: absolute;
+	top: 137px;
+	left: 174px;
+	width: 250px;
+	height: 500px;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 1px solid #ff6700;
+}
+.art_art_top_left li{
+	list-style: none;
+	width: 100%;
+	height: 30px;
+	margin-top: 19px;
+	
+}
+.art_art_top_left li a{
+	color: rgba(0,0,0,0.8);
+	font-size: 14px;
+}
+.art_art_top_left li:first-child{
+	margin-top: 0px;
+}
+.art_art_top_left li span{
+	float: right;
 }
 .header{
 	width: 1230px;
@@ -201,34 +277,6 @@ a{
 	text-align: center;
 	position: relative;
 	/*box-sizing: border-box;*/
-}
-.hot:before{
-	content: "热卖";
-	display: block;
-	width: 70px;
-	height: 20px;
-	border: 1px solid #ff6700;
-	color: #ff6700;
-	font-size: 12px;
-	text-align: center;
-	line-height: 20px;
-	position: absolute;
-	top: 0;
-	left: 103px;
-	margin-left: -35px;
-	font-weight: bold;
-}
-.right_line:after{
-	content: "";
-	display: block;
-	width: 1px;
-	height: 100px;
-	/*background-color: red;*/
-	background-color: rgba(0,0,0,0.1);
-	color: red;
-	position: absolute;
-	top: 30px;
-	right: 0px;
 }
 .header .nav_second .xiaomishouji ul li img{
 	margin-top: 30px;
