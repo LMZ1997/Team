@@ -187,30 +187,56 @@ a{
 .art_art_top_left{
 	background-color: white;
 	position: absolute;
-	top: 137px;
-	left: 174px;
+	top: 15%;
+	left: 17%;
 	width: 250px;
 	height: 500px;
-	padding: 20px;
 	box-sizing: border-box;
 	border: 1px solid #ff6700;
 }
 .art_art_top_left li{
 	list-style: none;
 	width: 100%;
-	height: 30px;
-	margin-top: 19px;
+	height: 46px;
+
 	
 }
 .art_art_top_left li a{
 	color: rgba(0,0,0,0.8);
 	font-size: 14px;
+		margin-left: 20px;
 }
 .art_art_top_left li:first-child{
-	margin-top: 0px;
+	margin-top: 20px;
 }
 .art_art_top_left li span{
 	float: right;
+	margin-right: 20px;
+}
+.Box{
+	position: absolute;
+	top: 15%;
+	left: 17%;
+	margin-left: 250px;
+	background-color: white;
+	
+	max-width: 980px;
+	min-width: 600px;
+	height: 500px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	border-left: none;
+	display: none;
+}
+.Box li{
+	float: left;
+	list-style: none;
+}
+.Box li img{
+	width: 100px;
+	height: 100px;
+}
+.Box li span{
+	color: #ff6700;
 }
 .header{
 	width: 1230px;
@@ -343,6 +369,7 @@ a{
 	width: 1230px;
 	height: 300px;
 	margin:0 auto;
+	overflow: hidden;
 }
 .shouye .bangzhu{
 	width: 100%;

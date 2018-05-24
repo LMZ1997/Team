@@ -1,5 +1,6 @@
 handleCart();
 handleNav();
+handleBox();
 function handleCart(){
 	var oCart=document.querySelector('.head_first .shopping-car');
 	var oCartBox=document.querySelector('.head_first  .cart_box');
@@ -275,4 +276,165 @@ function handleNav(){
 		}
 	}
 }
-function handle	
+function handleBox(){
+	var aBoxLi=document.querySelectorAll('.art_art_top_left li');
+	var oBox=document.querySelector('.Box');
+	var oBoxUl=document.querySelector('.Box ul');
+	var Items=[
+		[
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'小米mix2s'
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			}
+		],
+		[
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi3.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi3.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'红米note3'
+			},
+			{
+				img:'images/shouji1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			}
+		],
+		[
+		]
+	]
+	var index=0;
+	for(var i=0;i<aBoxLi.length;i++){
+		aBoxLi[i].index=i;
+		aBoxLi[i].onmouseenter=function(){
+			oBoxUl.innerHTML='';
+			oBox.style.display='block';
+			loadingData(this.index);
+			for (var j = 0; j < aBoxLi.length; j++) {
+				aBoxLi[j].style.background='';
+			}
+			this.style.background='#ff6700'
+		}
+	}
+	function loadingData(index){
+		var adata=Items[index];
+		// if(!adata){
+		// 	return;
+		// }	
+		for (var i = 0; i < adata.length; i++) {
+			var oLi=document.createElement('li');
+			var oImg=document.createElement('img');
+			var oSpan=document.createElement('span');
+			oImg.src=adata[i].img;
+			oSpan.innerHTML=adata[i].name;
+			oBoxUl.appendChild(oLi);
+			oLi.appendChild(oImg);
+			oLi.appendChild(oSpan);
+		}
+	}
+}	
