@@ -1,6 +1,7 @@
 handleCart();
-handleNav();
 handleBox();
+handleNav();
+handleSearch();
 function handleCart(){
 	var oCart=document.querySelector('.head_first .shopping-car');
 	var oCartBox=document.querySelector('.head_first  .cart_box');
@@ -32,13 +33,179 @@ function handleCart(){
 		},500)
 	}
 }
+function handleBox(){
+	var aBoxLi=document.querySelectorAll('.art_art_top_left li');
+	var oBox=document.querySelector('.Box');
+	var oBoxUl=document.querySelector('.Box ul');
+	var Items=[
+		[
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'小米mix2s'
+			},
+			{
+				img:'images/shouji1.png',
+				name:'小米mix2s'	
+			},
+			{
+				img:'images/shouji2.png',
+				name:'小米mix2s'	
+			}
+		],
+		[
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi3.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi3.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/shouji3.png',
+				name:'红米note3'
+			},
+			{
+				img:'images/shouji1.png',
+				name:'红米note3'	
+			},
+			{
+				img:'images/hongmi2.png',
+				name:'红米note3'	
+			}
+		],
+		[
+		]
+	]
+	var index=0;
+	for(var i=0;i<aBoxLi.length;i++){
+		aBoxLi[i].index=i;
+		aBoxLi[i].onmouseenter=function(){
+			oBoxUl.innerHTML='';
+			oBox.style.display='block';
+			loadingData(this.index);
+			for (var j = 0; j < aBoxLi.length; j++) {
+				aBoxLi[j].style.background='';
+			}			
+			this.style.background='#ff6700'			
+		}
+	}
+	function loadingData(index){
+		var adata=Items[index];
+		if(!adata){
+			return;
+		}	
+		for (var i = 0; i < adata.length; i++) {
+			var oLi=document.createElement('li');
+			var oImg=document.createElement('img');
+			var oSpan=document.createElement('span');
+			oImg.src=adata[i].img;
+			oSpan.innerHTML=adata[i].name;
+			oBoxUl.appendChild(oLi);
+			oLi.appendChild(oImg);
+			oLi.appendChild(oSpan);
+		}
+	}
+}
 function handleNav(){
 	var aNavLi=document.querySelectorAll('.header .nav_second li');
 	var oNav=document.querySelector('.header .nav_second');
 	var oUl=document.querySelector('.nav_content ul');
 	var oNavBox=document.querySelector('.nav_content');
-	var index=0;
+	var index=1;
 	var timer=null;
+	var timerBox=null;
+	var oDiv=document.querySelector('.art_art_top_left');
+	var oBox=document.querySelector('.Box');
+	var aBoxLi=document.querySelectorAll('.art_art_top_left li');
 	var aItems=[
 		[
 			{
@@ -221,7 +388,7 @@ function handleNav(){
 			}
 		],
 	]
-	for (var i = 0; i < aNavLi.length-2; i++) {
+	for (var i = 1; i < aNavLi.length-2; i++) {
 		aNavLi[i].index=i;
 		aNavLi[i].onmouseenter=function(){
 			clearTimeout(timer)
@@ -235,6 +402,7 @@ function handleNav(){
 		timer=setTimeout(function(){
 			oUl.innerHTML='';
 			animation(oNavBox,{height:0});
+			oNavBox.style.borderTop='none';
 		},500)	
 	}
 	oNavBox.onmouseenter=function(){
@@ -246,6 +414,7 @@ function handleNav(){
 		timer=setTimeout(function(){
 			oUl.innerHTML='';
 			animation(oNavBox,{height:0});
+			oNavBox.style.borderTop='none';
 		},500)
 	}
 	function loadData(index){
@@ -275,166 +444,40 @@ function handleNav(){
 			oLi.appendChild(oPrice);
 		}
 	}
+	aNavLi[0].onmouseenter=function(){
+		clearTimeout(timerBox);
+		oDiv.style.display='block';
+	}
+	aNavLi[0].onmouseleave=function(){
+		timerBox=setTimeout(function(){
+			oDiv.style.display='none';
+			oBox.style.display='none';
+			for (var i=0;i<aBoxLi.length;i++) {
+				aBoxLi[i].style.background=''
+			}
+		},500)
+	}
+	oDiv.onmouseover=function(){
+		clearTimeout(timerBox);
+		oDiv.style.display='block';
+	}
+	oDiv.onmouseout=function(){
+		timerBox=setTimeout(function(){
+			oDiv.style.display='none';
+			oBox.style.display='none';
+			for (var i=0;i<aBoxLi.length;i++) {
+				aBoxLi[i].style.background=''
+			}
+		},500)
+	}
 }
-function handleBox(){
-	var aBoxLi=document.querySelectorAll('.art_art_top_left li');
-	var oBox=document.querySelector('.Box');
-	var oBoxUl=document.querySelector('.Box ul');
-	var Items=[
-		[
-			{
-				img:'images/shouji1.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji2.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji3.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji1.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji2.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji1.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji2.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji3.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji1.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji2.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji1.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji2.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji3.png',
-				name:'小米mix2s'
-			},
-			{
-				img:'images/shouji1.png',
-				name:'小米mix2s'	
-			},
-			{
-				img:'images/shouji2.png',
-				name:'小米mix2s'	
-			}
-		],
-		[
-			{
-				img:'images/hongmi1.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi2.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi3.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi1.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi2.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi1.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi2.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi3.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi1.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi2.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi1.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi2.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/shouji3.png',
-				name:'红米note3'
-			},
-			{
-				img:'images/shouji1.png',
-				name:'红米note3'	
-			},
-			{
-				img:'images/hongmi2.png',
-				name:'红米note3'	
-			}
-		],
-		[
-		]
-	]
-	var index=0;
-	for(var i=0;i<aBoxLi.length;i++){
-		aBoxLi[i].index=i;
-		aBoxLi[i].onmouseenter=function(){
-			oBoxUl.innerHTML='';
-			oBox.style.display='block';
-			loadingData(this.index);
-			for (var j = 0; j < aBoxLi.length; j++) {
-				aBoxLi[j].style.background='';
-			}
-			this.style.background='#ff6700'
-		}
+function handleSearch(){
+	var oInput=document.querySelector('.search input');
+	var oSearchBox=document.querySelector('.fangdajing');
+	var oContent=document.querySelector('.search_content');
+	oInput.onfocus=function(){
+		oContent.style.display='block';
+		oInput.style.border='1px solid #ff6700'
 	}
-	function loadingData(index){
-		var adata=Items[index];
-		// if(!adata){
-		// 	return;
-		// }	
-		for (var i = 0; i < adata.length; i++) {
-			var oLi=document.createElement('li');
-			var oImg=document.createElement('img');
-			var oSpan=document.createElement('span');
-			oImg.src=adata[i].img;
-			oSpan.innerHTML=adata[i].name;
-			oBoxUl.appendChild(oLi);
-			oLi.appendChild(oImg);
-			oLi.appendChild(oSpan);
-		}
-	}
-}	
+}
+	
