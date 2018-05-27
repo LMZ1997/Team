@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<title>有品</title>
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/youpincss.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font.css">
-	<script>
+	<link rel="stylesheet" href="css/carousel.css">
+
+	<!-- <script>
 	window.onload = function(){
 	var oHod = document.getElementById('hod');
 	var aLi = oHod.getElementsByTagName('li');
@@ -16,28 +18,28 @@
 		aLi[i].index = i;
 		aLi[i].onmouseover = function(){
 		for (var j = 0; j < aLi.length; j++) {
-				/*aLi[j] = '';*/
+				
 				aDiv[j].style.display = 'none';
 			}
 			aDiv[this.index].style.display = 'block';
 		}
 		aLi[i].onmouseout = function(){
 		for (var j = 0; j < aLi.length; j++) {
-				/*aLi[j] = '';*/
+				
 				aDiv[j].style.display = 'none';
 			}
 			aDiv[this.index].style.display = 'none';
 		}
-
+	
 	}
-
-}
-	/*var oInp = document.getElementById('inp');
+	
+	}
+	var oInp = document.getElementById('inp');
 	var oInpt = document.getElementById('inpt');
 	oInpt onclick = function(){
 		oInpt.className = 'active';
-	}*/
-	</script>
+	}
+	</script>*/ -->
 </head>
 <body>
 	<div class="top clealfix">
@@ -57,7 +59,7 @@
 			<div class="header clealfix">
 				<div class="logo">
 					<h1>
-						<img src="imges/logo.png" alt="">
+						<img src="images/logo.png" alt="">
 					</h1>
 				</div>
 				<div class="sou">
@@ -88,23 +90,24 @@
 						<li><a href="#">婴童</a></li>
 						<li><a href="#">箱包</a></li>
 						<li><a href="#">品牌</a></li>
-						<div class="menu">
-							<p><img src="imges/hong1.png" alt=""></p>
-							<p><img src="imges/hong2.png" alt=""></p>
-							<p><img src="imges/hong3.png" alt=""></p>
-							<p><img src="imges/hong4.png" alt=""></p>
-							<p><img src="imges/hong5.png" alt=""></p>
-							<p><img src="imges/hong6.png" alt=""></p>
+						<!-- <div class="menu">
+							<p><img src="images/hong1.png" alt=""></p>
+							<p><img src="images/hong2.png" alt=""></p>
+							<p><img src="images/hong3.png" alt=""></p>
+							<p><img src="images/hong4.png" alt=""></p>
+							<p><img src="images/hong5.png" alt=""></p>
+							<p><img src="images/hong6.png" alt=""></p>
 							<span>更多&gt</span>
 						</div>
 						<div class="menu">
-							<p><img src="imges/ju1.png" alt=""></p>
-							<p><img src="imges/ju2.png" alt=""></p>
-							<p><img src="imges/ju3.png" alt=""></p>
-							<p><img src="imges/ju4.png" alt=""></p>
-							<p><img src="imges/ju5.png" alt=""></p>
-							<p><img src="imges/ju6.png" alt=""></p>
-						</div>
+							<p><img src="images/ju1.png" alt=""></p>
+							<p><img src="images/ju2.png" alt=""></p>
+							<p><img src="images/ju3.png" alt=""></p>
+							<p><img src="images/ju4.png" alt=""></p>
+							<p><img src="images/ju5.png" alt=""></p>
+							<p><img src="images/ju6.png" alt=""></p>
+						</div> -->
+						<!-- <div></div>
 						<div></div>
 						<div></div>
 						<div></div>
@@ -119,24 +122,32 @@
 						<div></div>
 						<div></div>
 						<div></div>
-						<div></div>
-						<div></div>
+						<div></div> -->
 				</ul>
 			</div>
-			<div class="lunbo">
-				<span>&lt</span>
+			<div class="nav-content">
+				<div class="container">
+					<div class="loader"></div>	
+					<ul>
+		
+					</ul>
+				</div>
+			</div>
+			<div id="carousel">
+				<!-- <span>&lt</span>
 				<span>&gt</span>
-
+				
 				<div class="imgbox">
 					<ul>
+						
 						<li><img src="imges/lunbo1.jpg" alt=""></li>
 						<li><img src="imges/lunbo2.jpg" alt=""></li>
 						<li><img src="imges/lunbo3.jpg" alt=""></li>
 						<li><img src="imges/lunbo1.jpg" alt=""></li>
-
+				
 					</ul>
 					
-				</div>
+				</div> -->
 			</div>
 			<div class="jinbao">
 				<ul>
@@ -157,6 +168,7 @@
 				</ul>
 			</div>
 		</div>
+
 	</div>
 	<div class="main">
 		<div class="container">
@@ -169,14 +181,14 @@
 				<div class="mhd">
 					<ul>
 						<li class="bo1"><a href="#">
-							<img src="imges/tui1.png" alt="">
+							<img src="images/tui1.png" alt="">
 							<p class="one">爆款推荐最高直降500元</p>
 							<p class="two">电视全户型场景定制</p>
 							<p class="three">去看看</p>
 							
 						</a></li>
-						<li class="bo2"><a href="#"><img src="imges/tui2.jpg" alt=""></a></li>
-						<li class="bo3"><a href="#"><img src="imges/tui3.jpg" alt=""></a></li>
+						<li class="bo2"><a href="#"><img src="images/tui2.jpg" alt=""></a></li>
+						<li class="bo3"><a href="#"><img src="images/tui3.jpg" alt=""></a></li>
 						
 					</ul>
 				</div>
@@ -193,25 +205,25 @@
 							<a href="#">
 							<p class="mi1">8H真皮电动休闲沙发</p>
 							<p class="mi2">￥1899</p>
-							<div class="imgbox"><img src="imges/zhongchou1.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhongchou1.png" alt=""></div>
 							</a></li>
 						<li class="col1 co2">
 							<a href="#">
 							<p class="mi1">AMAZFIT羚羊轻户外跑鞋</p>
 							<p class="mi2">￥199</p>
-							<div class="imgbox"><img src="imges/zhong1.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhong1.png" alt=""></div>
 							</a></li>
 						<li class="col1 co3">
 							<a href="#">
 							<p class="mi1">铜师傅安格尔黑胡桃原木餐桌椅</p>
 							<p class="mi2">￥279</p>
-							<div class="imgbox"><img src="imges/zhong2.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhong2.png" alt=""></div>
 							</a></li>
 						<li class="col1 flo">
 							<a href="#">
 							<p class="mi1">智能新风系统</p>
 							<p class="mi2">￥1499</p>
-							<div class="imgbox"><img src="imges/zhong3.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhong3.png" alt=""></div>
 							</a></li>
 					</ul>
 					<div class="bot">
@@ -256,7 +268,7 @@
 							<a href="#">
 							
 							<div class="niu">
-								<img src="imges/233.jpg" alt="">
+								<img src="images/233.jpg" alt="">
 								<p class="niu1">90分舒适随行牛仔裤男款</p>
 								<p class="niu2">￥199</p>
 							</div>
@@ -265,13 +277,13 @@
 							<a href="#">
 							<p class="mi1">樱兰和风筷六双装</p>
 							<p class="mi2">￥49起</p>
-							<div class="imgbox"><img src="imges/zhongchou1.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhongchou1.png" alt=""></div>
 							</a></li>
 						<li class="col1 co1">
 							<a href="#">
 							
 							<div class="xie">
-								<img src="imges/xie.png" alt="">
+								<img src="images/xie.png" alt="">
 								<p class="xie1">七面头层小牛皮乐福鞋</p>
 							<p class="xie2">￥499</p>
 							</div>
@@ -280,13 +292,13 @@
 							<a href="#">
 							<p class="mi1">AMAZFIT羚羊轻户外跑鞋</p>
 							<p class="mi2">￥199</p>
-							<div class="imgbox"><img src="imges/zhong1.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhong1.png" alt=""></div>
 							</a></li>
 						<li class="col1 co3">
 							<a href="#">
 							<p class="mi1">铜师傅安格尔黑胡桃原木餐桌椅</p>
 							<p class="mi2">￥279</p>
-							<div class="imgbox"><img src="imges/zhong2.png" alt=""></div>
+							<div class="imgbox"><img src="images/zhong2.png" alt=""></div>
 							</a></li>
 						<li class="col1 flo">
 							<a href="#">
@@ -304,25 +316,25 @@
 				<div class="remen">
 					<ul>
 						<li class="rem"><a href="#">
-							<img src="imges/yan.png" alt="">
+							<img src="images/yan.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 						</a></li>
 						<li class="rem"><a href="#">
-							<img src="imges/re2.png" alt="">
+							<img src="images/re2.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 						</a></li>
 						<li class="rem"><a href="#">
-							<img src="imges/re3.png" alt="">
+							<img src="images/re3.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 						</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/re4.png" alt="">
+							<a href="#"><img src="images/re4.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
@@ -340,16 +352,16 @@
 				<div class="remen pin">
 					<ul>
 						<li class=""><a href="#">
-							<img src="imges/5.jpg" alt="">
+							<img src="images/5.jpg" alt="">
 						</a></li>
 						<li class=""><a href="#">
-							<img src="imges/6.jpg" alt="">
+							<img src="images/6.jpg" alt="">
 						</a></li>
 						<li class=""><a href="#">
-							<img src="imges/7.jpg" alt="">
+							<img src="images/7.jpg" alt="">
 						</a></li>
 						<li class=" men1">
-							<a href="#"><img src="imges/8.jpg" alt="">
+							<a href="#"><img src="images/8.jpg" alt="">
 							</a></li>
 						
 					</ul>
@@ -361,7 +373,7 @@
 							<p class="shou2">更多&gt</p>
 						</a></li>
 						<li class="bianjiao"><a href="#">
-							<img src="imges/9.jpg" alt="">
+							<img src="images/9.jpg" alt="">
 						</a></li>				
 						
 					</ul>
@@ -369,56 +381,56 @@
 				<div class="remen">
 					<ul>
 						<li class="rem"><a href="#">
-							<img src="imges/hong1.png" alt="">
+							<img src="images/hong1.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 						</a></li>
 						<li class="rem"><a href="#">
-							<img src="imges/hong2.png" alt="">
+							<img src="images/hong2.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 						</a></li>
 						<li class="rem"><a href="#">
-							<img src="imges/hong3.png" alt="">
+							<img src="images/hong3.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 						</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/hong4.png" alt="">
+							<a href="#"><img src="images/hong4.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/hong5.png" alt="">
+							<a href="#"><img src="images/hong5.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/hong6.png" alt="">
+							<a href="#"><img src="images/hong6.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/hong7.png" alt="">
+							<a href="#"><img src="images/hong7.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/hong8.png" alt="">
+							<a href="#"><img src="images/hong8.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
@@ -433,7 +445,7 @@
 							<p class="shou2">更多&gt</p>
 						</a></li>
 						<li class="bianjiao"><a href="#">
-							<img src="imges/10.jpg" alt="">
+							<img src="images/10.jpg" alt="">
 						</a></li>				
 						
 					</ul>
@@ -441,56 +453,56 @@
 				<div class="remen">
 					<ul>
 						<li class="rem"><a href="#">
-							<img src="imges/ju1.png" alt="">
+							<img src="images/ju1.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 						</a></li>
 						<li class="rem"><a href="#">
-							<img src="imges/ju2.png" alt="">
+							<img src="images/ju2.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 						</a></li>
 						<li class="rem"><a href="#">
-							<img src="imges/ju3.png" alt="">
+							<img src="images/ju3.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 						</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/ju4.png" alt="">
+							<a href="#"><img src="images/ju4.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/ju5.png" alt="">
+							<a href="#"><img src="images/ju5.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/ju6.png" alt="">
+							<a href="#"><img src="images/ju6.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/ju7.png" alt="">
+							<a href="#"><img src="images/ju7.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
 							</div>
 							</a></li>
 						<li class="rem men1">
-							<a href="#"><img src="imges/ju8.png" alt="">
+							<a href="#"><img src="images/ju8.png" alt="">
 							<p class="re1">云米智能互联烟灶套装(天然气)</p>
 							<div class="hongmi"><p class="re2">烟灶，自动排水相互联动</p>
 							<p class="re3">￥2799</p>
@@ -506,13 +518,13 @@
 		<div class="container">
 		<div class="footer">
 			<ul>
-				<li><div class="youpin"><img src="imges/logo.png" alt=""></div></li>
+				<li><div class="youpin"><img src="images/logo.png" alt=""></div></li>
 				<li><p class="ban">版权归米家商城所有</p></li>
 				<li><p class="qiye">©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号
 					</p>
 					<p class="qiye1">企业名称：小米科技有限责任公司 联系电话：010-60606666 关于我们 入驻有品</p>
 				</li>
-				<li><div class="last"><img src="imges/logo2.png" alt=""></div></li>
+				<li><div class="last"><img src="images/logo2.png" alt=""></div></li>
 			</ul>
 			
 			
@@ -522,4 +534,7 @@
 		</div>
 	</div>
 </body>
+<script src = "js/tool.js"></script>
+<script src = "js/data.js"></script>
+<script src = "js/youpin.js"></script>
 </html>
