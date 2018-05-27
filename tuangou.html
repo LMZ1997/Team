@@ -25,11 +25,17 @@
 					<li><a href="#">Select Region</a></li>
 				</ul>
 			</div>
-			<div class="cart">
-				<a href="#">
-					<i class="iconfont">&#xe60c;</i>
-					<span class="cart-box">购物车(<span>0</span>)</span>
-				</a>
+			<div class="cart-box">
+				<div class="cart">
+					<a href="#">
+						<i class="iconfont">&#xe60c;</i>
+						<span class="cart-box">购物车(<span>0</span>)</span>
+					</a>
+				</div>
+				<div class="cart-content">
+					<!-- <div class="loader"></div> -->
+					<span class="empty-cart">购物车中还没有商品,赶紧选购吧!</span>
+				</div>
 			</div>
 			<div class="userinfo">
 				<ul>
@@ -132,7 +138,8 @@
 			 		 	  		</div>
 			 		 	  	</li>
 			 		 	  </ul>
-			 		 	  <a href=""><p class="end-le">没有找到想要的?请点击</p></a>
+			 		 	  <a href="#"><p class="end-le">没有找到想要的? 请点击&gt;</p></a>
+			 		 	  
 			 		 </div>
 			 	</div>
 			 </div>
@@ -712,5 +719,15 @@
          <div class="tansuo"></div>
 	</div>
 	<!--End end-->
+	<div id="mask"></div>
+    <div id="mask-box">
+    	<div id="mb">
+    	    <div id="mb-top">企业购会员服务</div>
+    	    <div id="mb-rg"></div>
+    	</div>
+    	<div id="mb-end"></div>
+    </div>
 </body>
+<script src="js/tool.js"></script>
+<script src="js/tuangou.js"></script>
 </html>
