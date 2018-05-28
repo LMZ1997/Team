@@ -66,7 +66,6 @@
 .header .sou .inputer{
 	height: 72px;
 	/* line-height: 72px; */
-	border-bottom: 1px solid black;
 	float: left;
 	border-bottom: 1px solid #e7e7e7;
 }
@@ -124,10 +123,66 @@
 	height: 88px;
 	/* background-color: blue; */
 }
+.hot .nav-content{
+	width: 1080px;
+	height: 0px;
+	background-color: #fff;
+	z-index:1000;
+	position:absolute;
+	top: 205px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	overflow: hidden;
+	
+}
+.nav-content .loader{
+	margin-top: 80px;
+	display: none;
+}
+.hot .nav-content li{
+	height: 200px;
+	float: left;
+	/* display: none; */
+	width: 150px;
+	position: relative;
+}
+.hot .nav-content li .img-box{
+	width: 100%;
+	height: 100px;
+	margin-top: 30px;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
+.hot .nav-content li img{
+	width: 80px;
+	height: 80px;
+}
+.hot .nav-content li .img-box:last-child{
+	border-right: none;
+}
+.nav-content .pro-pri{
+	color: #ff6700;
+}
+.nav-content p{
+	margin-top: 10px;
+	text-align: center;
+
+
+}
+.nav-content .tag{
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	border:1px solid #ff6700;
+	position: absolute;
+	text-align: center;
+	top:0;
+	left: 50%;
+	margin-left: -25px;
+}
 .hot .hd ul{
 	width: 100%;
 	height: 100%;
-	margin-left: 16px;
+	margin-left: 8px;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -138,10 +193,13 @@
 	/* padding-left: 17px; */
 	/* box-sizing: border-box; */
 	float: left;
-	margin-right: 35px;
+	margin-right: 34px;
 	transition:height 0.5s;
 	
 	
+}
+.hot .hd li:last-child{
+	margin-right: 0;
 }
 .hot .hd li:hover a{
 	color: red;
@@ -149,7 +207,7 @@
 .hot .hd ul li a{
 	height: 88px;
 	line-height: 88px;
-	font-size: 12px;
+	font-size: 13px;
 	color: black;
 	/* text-align: center; */
 	/* display: inline-block; */
@@ -196,10 +254,10 @@
 	height: 150px;
 	line-height: 150px;
 }
-.lunbo{
+/* #carousel{
 	height: 450px;
 	position: relative;
-}
+} */
 .imgbox{
 	overflow: hidden;
 }
@@ -357,6 +415,9 @@
 	/* border: 1px solid #000; */
 	float: left;
 }
+/* .mhd ul li:last-child{
+	margin-right: 0;
+} */
 .mhd .bo1{
 	width: 536px;
 	float: left;
