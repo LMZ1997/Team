@@ -231,13 +231,19 @@ a{
 .Box li{
 	float: left;
 	list-style: none;
+	margin-right: 30px;
+	margin-top: 30px;
 }
 .Box li img{
 	width: 100px;
-	height: 100px;
+	height: 80px;
 }
 .Box li span{
-	color: #ff6700;
+	color: rgba(0,0,0,0.8);
+	font-size: 13px;
+	position: relative;
+	top: -30px;
+	left: -5px;
 }
 .header{
 	width: 1230px;
@@ -315,10 +321,10 @@ a{
 .header .fangdajing{
 	float: right;
 	width: 50px;
-	height: 52px;
+	height: 50px;
 	border: 1px solid #b0b0b0;
 	border-left:  none;
-	line-height: 52px;
+	line-height: 50px;
 	text-align: center;
 }
 .header .fangdajing:hover{
@@ -341,19 +347,24 @@ a{
 	height: 300px;
 	background-color: white;
 	position: absolute;
-	top: 53px;
-	right: 49px;
-	/*display: none;*/
+	top: 51px;
+	right: 50px;
+	display: none;
 	border: 1px solid #ff6700;
+}
+.search_content li{
+	list-style: none;
+	height: 43px;
+	line-height: 43px;
 }
 .search_content span:first-child{
 	float: left;
 	font-size: 14px;
 }
 .search_content span:last-child{
-	float: left;
+	float: right;
 	color: #b0b0b0;
-	font-size: 12px;
+	font-size: 13px;
 }
 .header .search input{
 	width: 240px;
