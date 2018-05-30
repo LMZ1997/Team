@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-
-<!-- 
-
-何敏
-小米首頁
-
- -->
 <html>
 <head>
 	<title>小米</title>
-	<link rel="stylesheet" type="text/css" href="./css/mi.com.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<link rel="stylesheet" type="text/css" href="./css/font.css">
-	<!-- <link rel="stylesheet" href="./css/reset.css"> -->
-	<script  src="js/mi.com.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/carouselhe.css">
+
 </head>
 <body>
 	<div class="top">
-		<div class="contenter tops">
+		<div class="contenter">
 		<ul class="biao1">
 
 
@@ -29,10 +23,17 @@
 			<li><a href="youpin.html">有品</a> <span>|</span></li>
 			<li><a href="#">Select Region</a></li>
 		</ul>
-		<div class="cart" id="cart">
-			<i class="iconfont">&#xe60c;</i>
-			<div class="">购物车(0)</div>
-
+		<div class="cart-box">
+			<div class="cart">
+				<a href="#">
+				    <i class="iconfont">&#xe60c;</i>
+				    <div class="">购物车(0)</div>
+				</a>
+			</div>
+			<div class="cart-content">
+				<div class="loader"></div>
+				<span class="empty-cart">购物车中没有商品</span>
+			</div>
 		</div>
 		<div class="user">
 		<ul>
@@ -40,9 +41,7 @@
 			<li><a href="#">注册</a> <span>|</span></li>
 			<li><a href="#">消息通知</a> </li>
 		</ul></div>
-		<div class="boxche" id="shop">
-			<span>购物车中还没有商品，赶紧选购吧！</span>
-		</div>
+		
 	</div>
 <!-- 第一部分结束 -->
 
@@ -54,7 +53,7 @@
 		</div>
 		<div class="nev">
 			  <ul>
-			  	<li id="a1" ><a href="MIX.html" >小米手机</a></li>
+			  	<li><a href="MIX.html">小米手机</a></li>
 			  	<li><a href="">红米</a></li>
 			  	<li><a href="">电视</a></li>
 			  	<li><a href="">笔记本</a></li>	
@@ -66,523 +65,184 @@
 			  	<li><a href="fuwu.html">服务</a></li>
 			  	<li><a href="">社区</a></li>
 			  </ul>
-			  <div class="xiala"  id="fl" >
-			  	 <div class="xiala2"  >
-			  	
-			 	 </div>
-			  </div>
-			  <div class="search">
+			<div class="search">
 				<input type="text" name="">
 				<a href="#"> <span class="iconfont">&#xe616;</span> </a>
 				<a href="#" class="mi1">红米Note5</a>
 				<a href="#" class="mi2">小米MIX2</a>
-
-				</div>
+				<ul class="list">
+					<li>
+						<span>小米</span>
+						<span>52件</span>
+					</li>
+					<li>
+						<span>小米</span>
+						<span>52件</span>
+					</li>
+					<li>
+						<span>小米</span>
+						<span>52件</span>
+					</li>
+					<li>
+						<span>小米</span>
+						<span>52件</span>
+					</li>
+					<li>
+						<span>小米</span>
+						<span>52件</span>
+					</li>
+					<li>
+						<span>小米</span>
+						<span>52件</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="nev-content">
+			<div class="contenter">
+				<div class="loader">	</div>
+				<ul>
+					<!-- <li>
+						<div class="img-box">
+							<img src="images/9_01.gif" alt="">
+						</div>
+						<p class="name">小米MIX 2S</p>
+						<p class="price">3299元起</p>
+						<span class="tag">热门</span>
+					</li> -->
+					
+				
+				</ul>
+			</div>			
 		</div>
 		
 	</div>
 	<!-- — -logo-结束-->
 	<div class="hot contenter">
 		<div class="max">
-				<div class="pic" id="maxback"></div>
+				<div id="Carousel"></div>
 			<ul class="list">
-				<li id="list1"><a href="#"  >手机电话卡</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list2"><a href="#">电视盒子</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list3"><a href="#">笔记本</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list4"><a href="#">智能家电</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list5"> <a href="#">健康家居</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list6"><a href="#">出行儿童</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list7"><a href="#">路由器手机配件</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list8"><a href="#">移动电源插线板</a><span class="iconfont">&#xe623;</span></li>
-				<li id="list9"><a href="#">耳机音响</a><span class="iconfont">&#xe623;</span></li>
-				<li  id="list10"><a href="#">生活米兔</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">手机电话卡</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">电视盒子</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">笔记本</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">智能家电</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">健康家居</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">出行儿童</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">路由器手机配件</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">移动电源插线板</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">耳机音响</a><span class="iconfont">&#xe623;</span></li>
+				<li><a href="#">生活米兔</a><span class="iconfont">&#xe623;</span></li>
 			</ul>
+			<div class="max-content">
+			<!-- 	<ul>
+					<li>
+						<img src="images/9_01.gif" alt="">
 			
-			<div class="btn1">
-				<input type="button" id="maxbtn1" value="<">
-				
-				<!-- <i class="iconfont">&#xe627;</i> -->
-				
-			</div>		
-			<div class="btn2">
-				<input type="button" id="maxbtn2" value=">">
-			</div>	
-			<input type="button" name="" class="r1" id="r1">
-			<input type="button" name="" class="r2" id="r2">
-			<input type="button" name="" class="r3" id="r3">
-			
-			<!-- <span class="r1"></span>
-			<span class="r2"></span>
-			<span class="r3"></span>	 -->	
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
+					<li>
+						<img src="images/9_01.gif" alt="">
+		
+						<a href="#">小米MIX 2s</a>
+					</li>
 
-
-			<div class="item">
+				</ul> -->
 				<ul>
-					<li class="item1" id="item1">
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item01.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item02.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-					</li>
-					<li class="item1" id="item2">
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-						<div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div><div class="it">
-						<img src="./images/item03.png">
-						<span>小米MIX 2S</span>
-						<a href="#"></a>
-						</div>
-					</li>
-					<li class="item1" id="item3">
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item04.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-					</li>
-					<li class="item1" id="item4">
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item05.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-					</li>
-					<li class="item1" id="item5">
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-					</li>
-					<li class="item1" id="item6">
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-								<div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div><div class="it">
-								<img src="./images/item06.png">
-								<span>小米MIX 2S</span>
-								<a href="#"></a>
-								</div>
-					</li>
-
+					
 				</ul>
-			</div>	
+				
+			</div>
+			
 		</div>
 		<!-- 主视图完 -->
 
@@ -590,7 +250,9 @@
 			<div class="logo2">
 				<ul>
 					<li><i class="iconfont">&#xe908;</i><span>选购手机</span></li>
-					<li><i class="iconfont">&#xe905;</i><span><a href="tuangou.html">企业团购</a></span></li>
+					<li><a href="tuangou.html">
+						<i class="iconfont">&#xe905;</i><span>企业团购</span></a>
+					</li>
 					<li><i class="iconfont">&#xe63f;</i><span>F码通道</span></li>
 					<li><i class="iconfont">&#xe906;</i><span>米粉卡</span></li>
 					<li><i class="iconfont">&#xe904;</i><span>以旧换新</span></li>
@@ -608,7 +270,7 @@
 		<div class="flashtop ">
 			<h2 class="flash">小米闪购</h2>
 			<div class="dd">
-			<span>&lt;</span><span>&gt;</span>
+			<span>&lt;</span><span class="active">&gt;</span>
 			</div>
 		</div>
 			<div class="flash2 ">
@@ -622,40 +284,74 @@
 				<span class="time">32</span>
 
 			</div>
-			<ul class="flash3">
-				<li>
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-				</li>
-				<li>
-					<img src="./images/9_03.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-				</li>
-				<li>
-					<img src="./images/9_02.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-				</li>
-				<li>
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-				</li>
-			</ul>
+			<div class="product">
+				<ul class="flash3">
+					<li>
+						<img src="./images/9_01.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>
+						<img src="./images/9_03.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>
+						<img src="./images/9_02.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>					
+						<img src="./images/9_01.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>					
+						<img src="./images/9_01.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>					
+						<img src="./images/9_01.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>					
+						<img src="./images/9_03.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+					<li>					
+						<img src="./images/9_02.gif">
+						<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
+						<span class="wt2">5.99"全面屏,晓龙835处理器</span>
+						<span class="wt3">3099元</span>		
+						<del class="wt4">3599元</del>
+						<div class="hand"> <a href="#"></a></div>
+					</li>
+				</ul>
+			</div>
 			<div class="ad1"><img src="./images/10.gif"></div>
 	</div>
 	<div class="body contenter">
@@ -737,7 +433,7 @@
 		<div class="title2">
 			<span> 家电</span>
 			<ul>
-				<li>热门</li>
+				<li class="active">热门</li>
 				<li>电视影音</li>
 				<li>电脑</li>
 				<li>家居</li>
@@ -839,113 +535,7 @@
 		</div>
 		<div class="ad3"><img src="./images/ad_04.gif"></div>
 
-		
-<div class="title2">
-			<span> 智能</span>
-			<ul>
-				<li>热门</li>
-				<li>出行</li>
-				<li>健康</li>
-				<li>酷玩</li>
-				<li>路由器</li>
-			</ul>
-		</div>
-		<div class="dian">
-			<div  class="boxleft">
-				<div class="dian1"> <img src="./images/12_19.gif"></div>
-				<div class="dian1"> <img src="./images/12.gif"></div>
-			</div>
-		    <ul>
-				<li class="body-mi">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-					
-				</li><li class="body-mi  flag off-flag">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-				</li>
-			</li><li class="body-mi  flag  new-flag">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-
-				</li></li><li class="body-mi">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-
-				</li></li><li class="body-mi">
-					<div  class="boxtop">
-					
-						<span class="zi">小米VR眼镜</span>
-						<span class="price">299元</span>
-						
-					
-						<img src="./images/13_1.gif">
-				
-						<div class="hand1"> <a href="#"></a></div>
-					</div>
-					
-					<div class="boxbtm">
-						<span class="zi">浏览更多</span>
-						<span class="price">热门</span>
-						
-					
-						<img src="./images/13.gif">
-				
-						<div class="hand1"> <a href="#"></a></div>
-					</div>
-					
-				</li></li><li class="body-mi flag new-flag">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-
-				</li></li><li class="body-mi">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-
-				</li></li><li class="body-mi">
-					<img src="./images/9_01.gif">
-					<span class="wt1">小米MIX 2 6GB+128GB黑...</span>
-					<span class="wt2">5.99"全面屏,晓龙835处理器</span>
-					<span class="wt3">3099元</span>		
-					<del class="wt4">3599元</del>
-					<div class="hand"> <a href="#"></a></div>
-					<div class="float"> <a href="#">不错，打算再买一个。 <p>来自一个智障用户</p>    </a></div>
-
-
-				</li>
-		</div>
-		<div class="ad3 "><img src="./images/ad_05.gif"></div>
-<div class="title2">
+	<div class="title2">
 			<span> 搭配</span>
 			<ul>
 				<li>热门</li>
@@ -1342,131 +932,36 @@
 		<div class="hotnei">
 			<ul>
 				<li>
-					<span class="shu0">图书</span>
-					<div id="one">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </span>
-					<span class="shu3" >29.99元</span>
-					<img src="./images/nei_2.gif"  class="shuimg">
-					</div>
-					<div id="two">
-					<span class="shu1" >剑侠世界2</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >29.99元</span>
-					<img src="./images/nei_3.gif" class="shuimg">
-					</div>
-					<div id="three">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >29.99元</span>
-					<img src="./images/nei_4.gif" class="shuimg">
-					</div>
-
-					<div class="shu4" >
-						<input type="button" name="" id="btnshu1" >
-					</div>
-						<div class="shu5 " >
-						<input type="button" name="" id="btnshu2"  >
-					</div><div class="shu6" >
-						<input type="button" name="" id="btnshu3"  >
-					</div>
-
-				
-					
-					
+					<span>图书</span>
+					<span>哈利·波特与被诅咒的孩子</span>
+					<span>“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </span>
+					<span>29.99元</span>
+					<img src="./images/nei_2.gif">
+					<div></div><div></div><div></div>
 				</li>
 				<li>
-					<span class="shu0">图书</span>
-					<div id="one1">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >小米主题与迪士尼首度合作，打造精品迪士尼系列主题 </span>
-					<span class="shu3" >20.39元</span>
-					<img src="./images/nei_2.gif"  class="shuimg">
-					</div>
-					<div id="two1">
-					<span class="shu1" >剑侠世界2</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >59.09元</span>
-					<img src="./images/nei_3.gif" class="shuimg">
-					</div>
-					<div id="three1">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >49.99元</span>
-					<img src="./images/nei_4.gif" class="shuimg">
-					</div>
-
-					<div class="shu4" >
-						<input type="button" name="" id="btnshu11" >
-					</div>
-						<div class="shu5 " >
-						<input type="button" name="" id="btnshu21"  >
-					</div><div class="shu6" >
-						<input type="button" name="" id="btnshu31"  >
-					</div>
-
+					<span>主题</span>
+					<span>哈利·波特与被诅咒的孩子</span>
+					<span>“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </span>
+					<span>29.99元</span>
+						<img src="./images/nei_2.gif">
+					<div></div><div></div><div></div>
 				</li>
 				<li>
-					<span class="shu0">主题</span>
-					<div id="one2">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </span>
-					<span class="shu3" >239.99元</span>
-					<img src="./images/nei_1.gif"  class="shuimg">
-					</div>
-					<div id="two2">
-					<span class="shu1" >剑侠世界2</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >92.99元</span>
-					<img src="./images/nei_3.gif" class="shuimg">
-					</div>
-					<div id="three2">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >小米主题与迪士尼首度合作，打造精品迪士尼系列主题 </span>
-					<span class="shu3" >29.99元</span>
-					<img src="./images/nei_4.gif" class="shuimg">
-					</div>
-
-					<div class="shu4" >
-						<input type="button" name="" id="btnshu12" >
-					</div>
-						<div class="shu5 " >
-						<input type="button" name="" id="btnshu22"  >
-					</div><div class="shu6" >
-						<input type="button" name="" id="btnshu32"  >
-					</div>
-
+					<span>主题</span>
+					<span>哈利·波特与被诅咒的孩子</span>
+					<span>“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </span>
+					<span>29.99元</span>
+						<img src="./images/nei_3.gif">
+					<div></div><div></div><div></div>
 				</li>
 				<li>
-					<span class="shu0">主题</span>
-					<div id="one3">
-					<span class="shu1" >剑侠世界2</span>
-					<span class="shu2" >潮流武侠，炫动江湖！ </span>
-					<span class="shu3" >21.99元</span>
-					<img src="./images/nei_3.gif"  class="shuimg">
-					</div>
-					<div id="two3">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >22.99元</span>
-					<img src="./images/nei_1.gif" class="shuimg">
-					</div>
-					<div id="three3">
-					<span class="shu1" >哈利·波特与被诅咒的孩子</span>
-					<span class="shu2" >“哈利·波特”第八个故事中袭！特别彩排版剧本！ </span>
-					<span class="shu3" >59.99元</span>
-					<img src="./images/nei_4.gif" class="shuimg">
-					</div>
-
-					<div class="shu4" >
-						<input type="button" name="" id="btnshu13" >
-					</div>
-						<div class="shu5 " >
-						<input type="button" name="" id="btnshu23"  >
-					</div><div class="shu6" >
-						<input type="button" name="" id="btnshu33"  >
-					</div>
-
+					<span>主题</span>
+					<span>哈利·波特与被诅咒的孩子</span>
+					<span>“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </span>
+					<span>29.99元</span>
+						<img src="./images/nei_4.gif">
+					<div></div><div></div><div></div>
 				</li>
 			</ul>
 		</div>
@@ -1582,5 +1077,10 @@
 		<!-- 探索黑科技，小米为发烧而生！ -->
 	</div>
 
+
 </body>
+<script src="js/datahe.js"></script>
+<script src="js/tool.js"></script>
+<script src="js/index.js"></script>
+
 </html>
