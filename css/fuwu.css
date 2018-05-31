@@ -1,3 +1,58 @@
+ .oLeft{
+			width:30px;
+			height:30px;
+			position:absolute;
+			background:rgba(0,0,0,0.3);
+			left:0;
+			top:50%;
+			margin-top:-15px;
+			z-index:999;
+			text-align:center;
+			line-height: 30px;
+			color: #fff;
+			font-size: 20px;
+			cursor: pointer;		
+		}
+		.oRight{
+			width:30px;
+			height:30px;
+			position:absolute;
+			background:rgba(0,0,0,0.3);
+			right:0;
+			top:50%;
+			text-align:center;
+			line-height: 30px;
+			margin-top:-15px;
+			z-index:999;	
+			color: #fff;
+			font-size: 20px;
+			cursor: pointer;	
+		}
+		.botUl li.active{
+			background-color: rgba(255,255,0,1);
+			width:20px;
+			height: 20px;
+			float: left;
+			margin-right: 5px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.botUl{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			z-index: 999;
+		}
+		.botUl li{
+			width:20px;
+			height: 20px;
+		
+			background-color: rgba(0,0,0,0.5);
+			float: left;
+			margin-right: 5px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
  .cart_box .loader{
 			width: 4px;
 			height: 20px;
@@ -416,17 +471,19 @@ a{
 	height:250px;
 	overflow: hidden;
 }
-.shouye  div ul{
+.shouye li{
+	list-style: none;
+}
+/*.shouye  div ul{
 	width: 3690px;
 	height: 100%;
-	list-style: none;
-	animation-name: sport;
+	list-style: none;*/
+/*	animation-name: sport;
 	animation-duration: 7s;
 	animation-delay: 3s;
-	/*animation-timing-function: linear;*/
-	animation-iteration-count: infinite;
-}
-@keyframes sport{
+	animation-iteration-count: infinite;*/
+/*}*/
+/*@keyframes sport{
 	0%{
 		margin-left: 0px;
 	}
@@ -439,23 +496,20 @@ a{
 	75%{
 		margin-left: -2460px;
 	}
-	/*99%{
-		margin-left: -2460px;
-	}*/
 	100%{
 		margin-left: -2460px;
 	}
 
-}
-.shouye  div  ul li{
+}*/
+/*.shouye  div  ul li{
 	width: 1230px;
 	height: 100%;
 	float: left;
-}
-.shouye   div ul li img{
+}*/
+/*.shouye   div ul li img{
 	width: 1230px;
 	height: 100%;
-}
+}*/
 .zizhu {
 	/*margin-top: 20px;*/
 	width: 1230px;

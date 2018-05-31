@@ -2,6 +2,7 @@ handleCart();
 handleBox();
 handleNav();
 handleSearch();
+handleCarousel();
 function handleCart(){
 	var oCart=document.querySelector('.head_first .shopping-car');
 	var oCartBox=document.querySelector('.head_first  .cart_box');
@@ -521,5 +522,16 @@ function handleSearch(){
 			aSearchLi[i].style.background='';
 		}
 	}
+}
+function handleCarousel(){
+	new Carousel({
+		id:'carousel',
+		aImg:[
+			'images/shouye2.jpg','images/shouye1.jpg'
+		],
+		width:1230,
+		height:250,
+		playDuraton:3000
+	})
 }
 	
