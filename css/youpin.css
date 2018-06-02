@@ -61,7 +61,6 @@
 	height: 72px;
 	/* background-color: pink; */
 	float: right;
-
 }
 .header .sou .inputer{
 	height: 72px;
@@ -116,6 +115,7 @@
 .header .sou .cart i{
 	text-align: center;
 	font-size: 24px;
+	cursor: pointer;
 
 }
 .hot .hd{
@@ -656,6 +656,56 @@
 	text-align: center;
 	font-size: 20px;
 	margin-bottom:50px;
+	margin-top: 100px;
+}
+
+	
+
+.remen .hot-star{
+	position: relative;
+	width: 1082px;
+	overflow: hidden;	
+}
+.remen .hot-star ul{
+	width: 1350px;
+}
+.remen .hot-star span{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 36px;
+	border-radius: 50%;
+	border: 1px solid #e0e0e0;
+	color: #fff;
+	position: absolute;
+	z-index: 222;
+	background-color: #e8e8e8;
+	display: inline-block;
+
+	
+}
+.remen .hot-star span:nth-child(1):hover{
+	background-color: #C5C1AA;
+
+}
+.remen .hot-star span:nth-child(2):hover{
+	background-color: #8B6914;
+
+}
+.remen .hot-star .active{
+	background-color: #bebebe;
+	cursor: pointer;
+}
+.remen #left-po{
+	left: 0;
+	top: 0;
+	margin-top: 100px;
+	z-index: 222;
+}
+.remen #right-pa{
+	float: right;
+	right: 0;
+	top: 0;
 	margin-top: 100px;
 }
 .remen li{
