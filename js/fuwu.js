@@ -581,6 +581,8 @@ function handleCarousel(){
 		this.oBox.appendChild(this.oRight);	
 		this.oBox.appendChild(this.botUl);
 		this.oBox.appendChild(this.oUl);
+		this.oLeft.style.display='none';
+		this.oRight.style.display='none';
 	}
 	Carousel.prototype.bindEvent=function(){
 		this.oRight.onclick=function(){
