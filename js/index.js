@@ -546,16 +546,92 @@ function handleCard(){
     handlebook()
     function handlebook(){
         var ali=document.querySelectorAll('.body .hotnei ul li');
-        var aImg=document.querySelectorAll('.body .hotnei ul li img');
-        for (var i = 0; i < ali.length; i++) {
-            ali[0].onclick = function(){
-                aImg.style.src='./images/nei_2.gif';
+        var aImg1=document.querySelector('#book1');
+        var aImg2=document.querySelector('#book2');
+        var aImg3=document.querySelector('#book3');
+        var aImg4=document.querySelector('#book4');
+        var aImg5=document.querySelector('#book5');
+        var aImg6=document.querySelector('#book6');
+        var aImg7=document.querySelector('#book7');
+        var aImg8=document.querySelector('#book8');
+        var aImg9=document.querySelector('#book9');
+        var aImg10=document.querySelector('#book10');
+        var aImg11=document.querySelector('#book11');
+        var aImg12=document.querySelector('#book12');
+        var btn1=document.querySelectorAll('.body  .hotnei ul li div:nth-child(8) ');
+        var btn2=document.querySelectorAll('.body  .hotnei ul li div:nth-child(9) ');
+        var btn3=document.querySelectorAll('.body  .hotnei ul li div:nth-child(10) ');
+     console.log(aImg1);
+     console.log(btn1);
+
+        for (var i = 0; i <4; i++) {
+            if (i==0) {
+                btn1[i].onmouseenter = function(){
+                     aImg1.style.display='block';
+                    aImg2.style.display='none';
+                    aImg3.style.display='none';
+                }
+                btn2[i].onmouseenter = function(){
+                   aImg1.style.display='none';
+                    aImg2.style.display='block';
+                    aImg3.style.display='none';
+                }
+                btn3[i].onmouseenter = function(){
+                    aImg1.style.display='none';
+                    aImg2.style.display='none';
+                    aImg3.style.display='block';
+                }
             }
-            ali[1].onclick = function(){
-                aImg.style.src='./images/nei_3.gif';
+             if (i==1) {
+                btn1[i].onmouseenter = function(){
+                     aImg6.style.display='block';
+                    aImg4.style.display='none';
+                    aImg5.style.display='none';
+                }
+                btn2[i].onmouseenter = function(){
+                   aImg6.style.display='none';
+                    aImg4.style.display='block';
+                    aImg5.style.display='none';
+                }
+                btn3[i].onmouseenter = function(){
+                    aImg6.style.display='none';
+                    aImg4.style.display='none';
+                    aImg5.style.display='block';
+                }
             }
-            ali[2].onclick = function(){
-                aImg.style.src='./images/nei_4.gif';
+             if (i==2) {
+                btn1[i].onmouseenter = function(){
+                     aImg7.style.display='block';
+                    aImg8.style.display='none';
+                    aImg9.style.display='none';
+                }
+                btn2[i].onmouseenter = function(){
+                   aImg7.style.display='none';
+                    aImg8.style.display='block';
+                    aImg9.style.display='none';
+                }
+                btn3[i].onmouseenter = function(){
+                    aImg7.style.display='none';
+                    aImg8.style.display='none';
+                    aImg9.style.display='block';
+                }
+            }
+             if (i==3) {
+                btn1[i].onmouseenter = function(){
+                     aImg10.style.display='block';
+                    aImg11.style.display='none';
+                    aImg12.style.display='none';
+                }
+                btn2[i].onmouseenter = function(){
+                   aImg10.style.display='none';
+                    aImg11.style.display='block';
+                    aImg12.style.display='none';
+                }
+                btn3[i].onmouseenter = function(){
+                    aImg10.style.display='none';
+                    aImg11.style.display='none';
+                    aImg12.style.display='block';
+                }
             }
             
         }

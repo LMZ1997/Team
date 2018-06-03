@@ -1102,7 +1102,7 @@ display: inline-block;
 	font-size: 15px;
 	padding: 2px;
 }
-.body .title2  ul li:first-child{
+ .title2  ul li.active{
 	color: #ff6700;
 	border-bottom: 2px solid #ff6700;
 }
@@ -1583,13 +1583,25 @@ height: 300px;
 	text-align: center;
 	margin-top: 15px;
 }
+
 .body  .hotnei ul li  img{
 	display: block;
 	margin-left: 70px;
 	width: 150px;
 	height: 150px;
 	margin-top: 20px;
+	display: none;
 }
+#book1{
+	display: block;
+}#book4{
+	display: block;
+}#book8{
+	display: block;
+}#book11{
+	display: block;
+}
+
 .body  .hotnei ul li div{
 	width: 5px;
 	height: 5px;
@@ -1600,7 +1612,7 @@ height: 300px;
 	display: inline-block;
 	margin-top: 25px;
 }
-.body  .hotnei ul li div:nth-child(6){
+.body  .hotnei ul li div:nth-child(8){
 	margin-left: 106px;
 }
 /*.body  .hotnei ul li div:hover{
