@@ -659,7 +659,11 @@
 	margin-top: 100px;
 }
 
-	
+/* .mengban{
+		width: 100%;
+		height: 100%;
+		background-color: red;
+	} */	
 
 .remen .hot-star{
 	position: relative;
@@ -718,11 +722,13 @@
 	margin-bottom: 50px;
 	transition: all 0.3s;
 }
+
+
 .remen li:nth-child(5),
 .remen li:nth-child(6),
 .remen li:nth-child(7){
 	margin-right: 4px;
-}
+} 
 .remen li:hover{
 	ox-shadow: 0 5px 8px rgba(0,0,0,0.1);
 	transform: translateY(-5px);

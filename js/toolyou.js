@@ -11,9 +11,9 @@
 					}
 					if(isLinear){/*如果是匀速动画*/
 						if(curr>opation[attr]){/*比较当前值和目标值大小*/
-							iSpeed = -50;
+							iSpeed = -60;
 						}else{
-							iSpeed = 50;
+							iSpeed = 60;
 						}
 						if(Math.abs(opation[attr] - curr) <= Math.abs(iSpeed)){
 							isStop = true;
@@ -56,7 +56,7 @@
 							fnEnd()/*调用*/
 						}
 					}
-				},30)
+				},40)
 			
 		}
 

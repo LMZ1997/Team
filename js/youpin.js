@@ -15,7 +15,7 @@ function handleCarousel(){
 			'images/lun05.jpg'],
 			width:1080,
 			height:450,
-			playDuration:1000
+			playDuration:3000
 		});
 }
 function handlesearch(){
@@ -117,7 +117,7 @@ function handleFlash(){
 
 	aSpan[1].onclick = function(){
 		//oUl.style.marginLeft = "-256px";
-		animation(oUl,{marginLeft:-256});
+		animation(oUl,{marginLeft:-265},true);
 		this.className = "";
 		aSpan[0].className = "active";
 
