@@ -9,6 +9,7 @@ function handleCard(){
 	var oCartLoader= document.querySelector('.cart-box .loader'); 
 	var oCartContent= document.querySelector('.cart-box .cart-content'); 
 	var oCartEmpty= document.querySelector('.cart-box .empty-cart'); 
+    console.log(oCartBox)
 	oCartBox.onmouseenter = function(){
 		//1.改变购物车的背景色也字体颜色
 		oCart.style.background = '#fff';
